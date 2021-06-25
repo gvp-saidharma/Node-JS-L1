@@ -41,3 +41,48 @@ for(var i=0;i<5;i++){
 		//console.log(i);
 	},100)
 }
+
+//Promise Chaining 
+/*new Promise((resolve, reject)=>{
+    resolve(1)
+}).then((x)=>{
+    x = x + 1;
+    console.log('1:'+x);
+    return x;
+}).then((x)=>{
+    console.log('2:'+x);
+    x = x + 1;
+    throw "Error";
+}).catch((ex) => {
+    console.error(ex); 
+    return 1;
+}).then((x)=>{
+    x = x + 1;
+    console.log('4:'+x);
+    return x;
+}).then((x)=>{
+    x = x + 1;
+    console.log('5:'+x);
+}).catch((ex)=>{
+    console.log(ex);
+});*/
+/*
+1:2
+2:2
+Error
+4:2
+5:3
+*/
+
+/*
+function test(a,b){
+ console.log(a,b);
+}
+
+function test(a,b,c){
+ console.log(a,b,c);
+}
+
+test();
+test(1,2);
+*/
